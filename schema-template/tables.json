@@ -1,0 +1,144 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "tables.json",
+	"version": "1.1.11",
+	"type": "object",
+	"$defs": {
+		"tableData": {
+			"type": "object",
+			"$$merge": [
+				{
+					"properties": {
+						"name": {"type": "string"},
+						"source": {"$ref": "util.json#/$defs/source"},
+						"page": {"$ref": "util.json#/$defs/page"},
+						"$$ifSite": {
+							"srd": {"$ref": "util.json#/$defs/srd"},
+							"srd52": {"$ref": "util.json#/$defs/srd"},
+							"basicRules": {"$ref": "util.json#/$defs/basicRules"},
+							"basicRules2024": {"$ref": "util.json#/$defs/basicRules"}
+						},
+						"data": {
+							"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
+							"type": "object"
+						}
+					}
+				},
+				{"$ref" : "entry.json#/$defs/entryTableBase"},
+				{
+					"properties": {
+						"type": {
+							"type": "string",
+							"default": "table",
+							"enum": [
+								"table",
+								"tableGroup"
+							]
+						},
+						"legacy": {"$ref": "util.json#/$defs/legacy"},
+						"otherSources": {
+							"$ref": "util.json#/$defs/otherSources"
+						},
+						"chapter": {
+							"type": "object",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"ordinal": {
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string",
+											"enum": ["chapter", "appendix", "part", "episode", "level", "section"]
+										},
+										"identifier": {
+											"type": ["integer", "string"]
+										}
+									},
+									"additionalProperties": false,
+									"required": [
+										"type",
+										"identifier"
+									]
+								},
+								"index": {
+									"type": "integer"
+								}
+							}
+						},
+						"$$ifBrew": {
+							"parentEntity": {
+								"type": "object",
+								"properties": {
+									"prop": {"type": "string"},
+									"uid": {"type": "string"}
+								},
+								"additionalProperties": false,
+								"required": [
+									"prop",
+									"uid"
+								]
+							}
+						}
+					},
+					"if": {
+						"properties": {
+							"type":{
+								"const": "tableGroup"
+							}
+						},
+						"required": [
+							"type"
+						]
+					},
+					"then": {
+						"required": [
+							"name",
+							"source",
+							"tables"
+						]
+					},
+					"else": {
+						"required": [
+							"name",
+							"source",
+							"rows"
+						]
+					}
+				}
+			],
+			"properties": {
+				"tables": {
+					"type": "array",
+					"items": {
+						"$ref": "#/$defs/tableData"
+					}
+				},
+				"$$ifBrew": {
+					"foundryImg": {
+						"$ref": "util-foundry.json#/$defs/foundryImg"
+					}
+				}
+			}
+		}
+	},
+
+	"properties": {
+		"table": {
+			"type": "array",
+			"minItems": 1,
+			"uniqueItems": true,
+			"items": {
+				"$ref": "#/$defs/tableData"
+			}
+		},
+		"_meta": {
+			"$ref": "util.json#/$defs/metaBlock"
+		}
+	},
+	"required": [
+		"table"
+	],
+	"additionalProperties": false
+}
