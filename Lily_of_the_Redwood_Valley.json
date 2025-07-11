@@ -1,0 +1,777 @@
+{
+	"siteVersion": "2.10.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LilyoftheRedwoodValley",
+				"abbreviation": "LORV",
+				"full": "Lily of the Redwood Valley",
+				"version": "1.0",
+				"color": "9e0000",
+				"authors": [
+					"SaltyDelta"
+				]
+			}
+		],
+		"dateAdded": 1752270639,
+		"dateLastModified": 1752270639,
+		"edition": "classic"
+	},
+	"monster": [
+		{
+			"name": "Aka Oni",
+			"source": "LilyoftheRedwoodValley",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 20
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 7,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "+2",
+				"dex": "+1",
+				"con": "+3",
+				"int": "-2",
+				"wis": "+0",
+				"cha": "+0"
+			},
+			"skill": {
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"fire",
+				"necrotic",
+				"slashing"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Brave.",
+					"entries": [
+						"The oni has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The oni's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "High Jump",
+					"entries": [
+						"Oni can jump up to 30 feet by spending 10 feet of it's movement."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Kanabo",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry.",
+					"entries": [
+						"The oni adds 2 to its AC against one melee attack that would hit it. To do so, the oni must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/eEc29wW.png"
+			},
+			"traitTags": [
+				"Aggressive",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"An oni with the Master template applied to it. Dread oni are fearsome creatures, even among the already terrifying oni. They lead other oni through force of will and intimidation on raids that can decimate entire countrysides, before vanishing almost as quickly as they appeared. They rarely enter combat themselves, preferring to gaze at the treasures they amass, but when they do, they can destroy opponents. They crave magic just as much as any oni, however, and so can easily be pressured into service themselves by hags and evil wizards."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PE3spX3.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ao Oni",
+			"source": "LilyoftheRedwoodValley",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 7,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "+3",
+				"dex": "-2",
+				"con": "+3",
+				"int": "+3",
+				"wis": "+0",
+				"cha": "+0"
+			},
+			"skill": {
+				"deception": "+2",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				"necrotic"
+			],
+			"vulnerable": [
+				"bludgeoning",
+				"radiant"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "1/2",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The oni's innate spellcasting ability is Charisma (spell save {@dc 13}, +4 to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell darkness|XPHB}",
+						"{@spell invisibility|XPHB}"
+					],
+					"daily": {
+						"3": [
+							"{@spell ray of enfeeblement|XPHB}",
+							"{@spell vampiric touch|XPHB}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the Oni can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Brave.",
+					"entries": [
+						"The oni has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Magic Weapons.",
+					"entries": [
+						"The oni's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance.",
+					"entries": [
+						"The oni has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Vampiric Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage. The oni regains hit points equal to 1/4 the damage dealt."
+					]
+				},
+				{
+					"name": "Kanabo",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 3}) slashing damage."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/cTnqj3T.png"
+			},
+			"traitTags": [
+				"Aggressive",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			],
+			"fluff": {
+				"entries": [
+					"The maho no oni is a green-skinned variety of oni with the ability to steal the life force of others and use it to heal other oni."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/n1nt8pH.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Enenra",
+			"source": "LilyoftheRedwoodValley",
+			"size": [
+				"H"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "(natural armor)"
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "Hover"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 12,
+			"wis": 10,
+			"cha": 16,
+			"save": {
+				"str": "+2",
+				"dex": "+5",
+				"con": "+3",
+				"int": "+1",
+				"wis": "+10",
+				"cha": "+16"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"bludgeoning",
+				"lightning",
+				"piercing",
+				"thunder",
+				{
+					"resist": [
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"Auran",
+				"Ignan"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Ash Form",
+					"entries": [
+						"The enenra's space is considered heavily obscured. It can move through a space as narrow as 1 inch wide without squeezing, and can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature must make a {@dc 14} Constitution saving throw. A creature takes 4 ({@damage 1d8}) fire damage, plus 11 ({@damage 2d10}) poison damage if it needs to breathe, and becoming {@condition blinded} on a failed save, or takes half as much damage and isn't {@condition blinded} on a success. A creature {@condition blinded} this way which is no longer in the same space as the enenra can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Illumination",
+					"entries": [
+						"The enenra sheds bright light in a 15-foot radius and dim light for an additional 15 feet."
+					]
+				},
+				{
+					"name": "Water Susceptibility.",
+					"entries": [
+						"For every 5 feet the enenra moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d8 + 5}) bludgeoning damage plus 12 ({@damage 2d6 + 5}) fire damage. If the target is a creature or a flammable object, it ignites. Until someone takes an action to douse the fire, the target takes 5 ({@damage 1d10}) fire damage at the start of each of its turns."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Smog Camouflage",
+					"entries": [
+						"While in dim light or darkness or within 5 feet of a Medium or larger cloud of smoke, the enenra takes the Hide action."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/K3Oi06v.png"
+			},
+			"traitTags": [
+				"Illumination"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AU",
+				"IG"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"F",
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/JtGlHGw.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ishido Uta",
+			"source": "LilyoftheRedwoodValley",
+			"level": 14,
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10
+		},
+		{
+			"name": "Kappa",
+			"source": "LilyoftheRedwoodValley",
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"special": "16"
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 25,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "+2",
+				"dex": "+2",
+				"con": "+1",
+				"int": "+0",
+				"wis": "+0",
+				"cha": "+1"
+			},
+			"skill": {
+				"athletics": "+2",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"resist": [
+				"cold",
+				"necrotic",
+				{
+					"resist": [
+						"slashing"
+					],
+					"note": "(nonmagical weapons)"
+				}
+			],
+			"vulnerable": [
+				"fire",
+				"piercing"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The kappa is a 3th level spellcaster. Its spellcasting abillity is Charisma. The kappa can cast faerie fire using a 1st level spell slot and knows the following sorcerer spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell minor illusion|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell expeditious retreat|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility|XPHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "River Child",
+					"entries": [
+						"If the kappa is submerged in water, it regains 2 ({@dice 1d4}) hit points at the start of each of its turns."
+					]
+				},
+				{
+					"name": "Underwater Camouflage",
+					"entries": [
+						"The kappa has advantage on Dexterity (Stealth) checks made while underwater."
+					]
+				},
+				{
+					"name": "Wrestler",
+					"entries": [
+						"The kappa has advantage on Strength (Athletics) checks to initiate or escape a grapple and can make one as a bonus action."
+					]
+				},
+				{
+					"name": "Water Steps",
+					"entries": [
+						"Kappa can open a temporary portal between two water areas, allowing it to move from one such area to another without crossing the intervening space. If it starts its turn in an area of water, it can open a portal to another area of water within range and transport itself to that spot. Doing this doesn't use up its movement for the turn, regardless of the distance travelled. It can't use Water steps while {@condition prone}. Moving in this manner does not draw opportunity attacks. It's can use this traits equal amount of 1st-level spells slot."
+					]
+				},
+				{
+					"name": "Pool of Life",
+					"entries": [
+						"If the kappa spills the water in its plate, the kappa will take 3 ({@damage 1d6}) damage at the start of its until it is refilled. If the kappa suffers a critical hit or is knocked {@condition prone}, it must succeed on a Dexterity saving throw with a DC equal to half the damage taken, or 10 if no damage was taken. On a failed save the kappa spills the water in its plate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The kappa makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Withdraw",
+					"entries": [
+						"The kappa withdraws its head and limbs into its shell. While the kappa is withdrawn, it has a +5 bonus to AC, but it cannot move or perform any actions, and can only see in front of it. The kappa may exit its shell as a bonus action."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The kappa takes the Disengage or Hide action."
+					]
+				}
+			],
+			"traitTags": [
+				"Camouflage"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					"The river is a symbol of beauty and life. Its constant flow invites a feeling of calm and serenity. However, rivers are also dangerous and parents warn children of going too close to the river, not only because of drowning but also for the creatures that lie beneath the surface. One of the strangest by far, it is not wrong to call the kappa an enigma."
+				]
+			}
+		},
+		{
+			"name": "Touma Tachibana",
+			"isNpc": true,
+			"source": "LilyoftheRedwoodValley",
+			"level": 10,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "10d8 + 10",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 18,
+			"wis": 10,
+			"cha": 16,
+			"save": {
+				"int": "+7",
+				"dex": "+6"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"athletics": "+3",
+				"investigation": "+7",
+				"persuasion": "+6",
+				"stealth": "+6"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/oQSQw4o.png"
+			},
+			"languageTags": [
+				"C"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/oQSQw4o.png"
+						}
+					}
+				]
+			}
+		}
+	]
+}
