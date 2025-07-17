@@ -13,8 +13,8 @@
 				]
 			}
 		],
-		"dateAdded": 1752270639,
-		"dateLastModified": 1752270639,
+		"dateAdded": 1752773206,
+		"dateLastModified": 1752773206,
 		"edition": "classic"
 	},
 	"monster": [
@@ -116,7 +116,7 @@
 				{
 					"name": "Kanabo",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h} 7 ({@damage 1d8 + 3} One Handed ), 9 ({@dice 1d12 + 3} Two Handed)  bludgeoning damage."
 					]
 				}
 			],
@@ -283,7 +283,7 @@
 				{
 					"name": "Kanabo",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 3}) slashing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h} 7 ({@damage 1d8 + 3} One Handed ), 9 ({@dice 1d12 + 3} Two Handed)  bludgeoning damage."
 					]
 				}
 			],
@@ -454,6 +454,14 @@
 					]
 				}
 			],
+			"reaction": [
+				{
+					"name": "Vaporous Dodge",
+					"entries": [
+						"When the Enenra is hit by a weapon attack, a can billow into smoke, imposing disadvantags on the triggering attack and moving up to 10 feet without provoking opportunity attacks"
+					]
+				}
+			],
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/K3Oi06v.png"
@@ -503,7 +511,15 @@
 			"size": [
 				"M"
 			],
-			"type": "aberration",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "Renkyu",
+						"prefix": "NPC"
+					}
+				]
+			},
 			"alignment": [
 				"N",
 				"G"
@@ -524,7 +540,13 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 10,
-			"passive": 10
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			]
 		},
 		{
 			"name": "Kappa",
@@ -682,6 +704,10 @@
 					]
 				}
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/JhMNhF1.png"
+			},
 			"traitTags": [
 				"Camouflage"
 			],
@@ -706,6 +732,189 @@
 			"fluff": {
 				"entries": [
 					"The river is a symbol of beauty and life. Its constant flow invites a feeling of calm and serenity. However, rivers are also dangerous and parents warn children of going too close to the river, not only because of drowning but also for the creatures that lie beneath the surface. One of the strangest by far, it is not wrong to call the kappa an enigma."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/OXFzLAg.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Nue",
+			"source": "LilyoftheRedwoodValley",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"climb": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"str": "+3",
+				"dex": "+3",
+				"con": "+2",
+				"int": "+3",
+				"wis": "+1",
+				"cha": "-1"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"psychic",
+						"slashing",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"slashing"
+					],
+					"note": "nonmagical attacks"
+				}
+			],
+			"vulnerable": [
+				"piercing",
+				"radiant"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Mixed Anatomy",
+					"entries": [
+						"The Nue's unusual form grants it unique advantages. Its movement is unimpeded by difficult terrain caused by non-magical plants, and it has advantage on Dexterity (Stealth) checks made in dim light or darkness."
+					]
+				},
+				{
+					"name": "Unsettling Presence",
+					"entries": [
+						"Any creature that starts its turn within 30 feet of the Nue and can see it must succeed on a {@dc 13} Wisdom saving throw or have disadvantage on attack rolls against the Nue until the start of the creature's next turn. If the creature succeeds on its saving throw, it is immune to the Nue's Unsettling Presence for 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}10 ({@damage 2d6 + 3}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}7 ({@damage 2d4 + 3}) piercing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+					]
+				},
+				{
+					"name": "Dreadful Cry {@recharge 3}",
+					"entries": [
+						"The Nue emits horrifying, crying noises that assault the minds of creatures within a 30-foot radius. Each creature in that area must make a {@dc 13} Wisdom saving throw. On a failed save, a creature takes 6 ({@damage 2d6}) psychic damage and is {@condition frightened} until the end of its next turn. On a successful save, a creature takes half as much damage and isn't {@condition frightened}."
+					]
+				},
+				{
+					"name": "Storm's Fury {@recharge 4}",
+					"entries": [
+						"Nue calls forth a localized burst of elemental energy. Each creature in a 15-foot radius sphere centered on a point within 60 feet of the Nue must make a {@dc 13} Dexterity saving throw. On a failed save, a creature takes 6 ({@damage 1d12}) lightning damage or 6 ({@damage 2d6}) thunder damage (Nue's choice). On a successful save, a creature takes half as much damage."
+					]
+				},
+				{
+					"name": "Shadow Dive",
+					"entries": [
+						"Nue must be flying and hidden (typically from using Shifting Black Cloud). It flies up to its speed towards a creature it can see, emerging from its concealment. This movement doesn't provoke opportunity attacks. If it ends its movement adjacent to a creature, it makes one Bite or Claws attack against that creature with advantage. On a hit, the attack deals an additional 3 ({@damage 1d6}) psychic damage, representing the mental shock of the sudden, unseen assault."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shifting Black Cloud",
+					"entries": [
+						"Nue swiftly ascends, becoming momentarily obscured. It flies up to its speed without provoking opportunity attacks. At any point during this movement, it can choose to create a 20-foot radius sphere of magical darkness centered on itself. This darkness lasts until the start of the Nue's next turn. The Nue can immediately attempt to hide as part of this action."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/aI40bcO.png"
+			},
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S",
+				"T",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MA"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"Nue is a wingless flying beast comprised of various animal parts. It is both a harbinger and a bringer of suffering, calamity, and political unrest. Even those who only hear its eerie cry (Hyoo! Hyoo!) are said to fall upon misfortune. Nue is said to have the face of a monkey, the body of a tanuki, the limbs of a tiger, and the tail of a snake."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/xLdYyKR.png"
+						}
+					}
 				]
 			}
 		},
@@ -717,7 +926,15 @@
 			"size": [
 				"M"
 			],
-			"type": "humanoid",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "Renkyu",
+						"prefix": "NPC"
+					}
+				]
+			},
 			"alignment": [
 				"N",
 				"G"
@@ -753,7 +970,6 @@
 			"languages": [
 				"Common"
 			],
-			"cr": "12",
 			"tokenHref": {
 				"type": "external",
 				"url": "https://i.imgur.com/oQSQw4o.png"
