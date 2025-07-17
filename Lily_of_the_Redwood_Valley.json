@@ -13,8 +13,8 @@
 				]
 			}
 		],
-		"dateAdded": 1752773206,
-		"dateLastModified": 1752773206,
+		"dateAdded": 1752774034,
+		"dateLastModified": 1752774034,
 		"edition": "classic"
 	},
 	"monster": [
@@ -867,7 +867,7 @@
 				{
 					"name": "Shifting Black Cloud",
 					"entries": [
-						"Nue swiftly ascends, becoming momentarily obscured. It flies up to its speed without provoking opportunity attacks. At any point during this movement, it can choose to create a 20-foot radius sphere of magical darkness centered on itself. This darkness lasts until the start of the Nue's next turn. The Nue can immediately attempt to hide as part of this action."
+						"Nue swiftly ascends, becoming momentarily obscured. It flies up to its speed without provoking opportunity attacks. At any point during this movement, it can choose to create a 30-foot radius sheet of magical darkness blobs centred on itself. This darkness lasts until the start of the Nue's next turn. The Nue can immediately attempt to hide as part of this action."
 					]
 				}
 			],
