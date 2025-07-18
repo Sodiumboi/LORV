@@ -1,5 +1,5 @@
 {
-	"siteVersion": "2.10.1",
+	"siteVersion": "2.10.2",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				]
 			}
 		],
-		"dateAdded": 1752774034,
-		"dateLastModified": 1752774034,
+		"dateAdded": 1752858697,
+		"dateLastModified": 1752858697,
 		"edition": "classic"
 	},
 	"monster": [
@@ -660,19 +660,19 @@
 				{
 					"name": "Wrestler",
 					"entries": [
-						"The kappa has advantage on Strength (Athletics) checks to initiate or escape a grapple and can make one as a bonus action."
+						"The kappa has an advantage on Strength (Athletics) checks to initiate or escape a grapple and can make one as a bonus action."
 					]
 				},
 				{
 					"name": "Water Steps",
 					"entries": [
-						"Kappa can open a temporary portal between two water areas, allowing it to move from one such area to another without crossing the intervening space. If it starts its turn in an area of water, it can open a portal to another area of water within range and transport itself to that spot. Doing this doesn't use up its movement for the turn, regardless of the distance travelled. It can't use Water steps while {@condition prone}. Moving in this manner does not draw opportunity attacks. It's can use this traits equal amount of 1st-level spells slot."
+						"Kappa can open a temporary portal between any two water areas within 120 ft. around it, allowing it to move from one such area to another without crossing the intervening space. If it starts its turn in an area of water, it can open a portal to another area of water within range and transport itself to that spot. Doing this doesn't use up its movement for the turn, regardless of the distance travelled. It can't use Water steps while {@condition prone}. Moving in this manner does not draw opportunity attacks. It's can use this traits equal amount of 1st-level spells slot."
 					]
 				},
 				{
 					"name": "Pool of Life",
 					"entries": [
-						"If the kappa spills the water in its plate, the kappa will take 3 ({@damage 1d6}) damage at the start of its until it is refilled. If the kappa suffers a critical hit or is knocked {@condition prone}, it must succeed on a Dexterity saving throw with a DC equal to half the damage taken, or 10 if no damage was taken. On a failed save the kappa spills the water in its plate."
+						"If the kappa spills the water in its plate, the kappa will take 3 ({@damage 1d6}) damage at the start of its turn until it is refilled. If the kappa suffers a critical hit or is knocked {@condition prone}, it must succeed on a Dexterity saving throw with a DC equal to half the damage taken, or 10 if no damage was taken. On a failed save, the kappa spills the water in its plate."
 					]
 				}
 			],
@@ -867,7 +867,7 @@
 				{
 					"name": "Shifting Black Cloud",
 					"entries": [
-						"Nue swiftly ascends, becoming momentarily obscured. It flies up to its speed without provoking opportunity attacks. At any point during this movement, it can choose to create a 30-foot radius sheet of magical darkness blobs centred on itself. This darkness lasts until the start of the Nue's next turn. The Nue can immediately attempt to hide as part of this action."
+						"Nue swiftly ascends, becoming momentarily obscured. It flies up to its speed without provoking opportunity attacks. At any point during this movement, it can choose to create a 20-foot radius sheet of magical darkness blobs centred on itself. This darkness lasts until the start of the Nue's next turn. The Nue can immediately attempt to hide as part of this action."
 					]
 				}
 			],
